@@ -1,6 +1,6 @@
  // Function to fetch available services and populate the dropdown
  function fetchServices() {
-  fetch('https://admin.cylsys.com/RequestQuote/AllServices')
+  fetch('https://cylsysadmin.cylsys.com/RequestQuote/AllServices')
     .then(response => response.json())
     .then(data => {
       const servicesDropdown = document.getElementById('servicesDropdown');
@@ -20,7 +20,7 @@
 // Function to submit form data via POST request
 function submitForm(formData) {
   console.log('Submitting form data:', formData);
-  fetch('https://admin.cylsys.com/RequestQuote/SaveRequest', {
+  fetch('https://cylsysadmin.cylsys.com/RequestQuote/SaveRequest', {
     method: 'POST',
     body: formData
   })
