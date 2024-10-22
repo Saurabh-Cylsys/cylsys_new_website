@@ -1,0 +1,11 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+ 
+
+User-agent: *
+Allow: /
+
+ 
+
+Sitemap: https://www.cylsys.com/sitemap.xml
