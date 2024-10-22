@@ -221,11 +221,124 @@
                   <div class="section-title">
                     <div class="heading">
                       <h2>Request a Quote</h2>
+                      <form id="quoteForm" method="post">
+                        <div class="">
+                          <input
+                            type="text"
+                            class="form-control mb-1"
+                            id="name"
+                            placeholder="Name"
+                            name="name"
+                            required
+                          />
+                        </div>
+                        <div class="">
+                          <div class="input-group mb-1">
+                            <input
+                              type="email"
+                              class="form-control text-ridus"
+                              id="email"
+                              placeholder="Email"
+                              name="email"
+                              required
+                            />
+                          </div>
+                        </div>
+                        
+                        <div class="">
+                          <div class="input-group mb-1">
+                            <input
+                              type="tel"
+                              class="form-control text-ridus"
+                              id="phoneNo"
+                              placeholder="Phone"
+                              name="phoneNo"
+                              maxlength="10"
+                              pattern="[0-9]*"
+                              required
+                            />
+                          </div>
+                        </div>
+                       
+                        <div class="">
+                          <div class="mb-1">
+                            <select class="form-control text-ridus" id="servicesDropdown" name="services">
+                              <option value="">Select Service</option>
+                            </select>
+                          </div>
+                        </div>
+                         <div class="form-group">
+                          <textarea
+                            class="form-control"
+                            rows="3"
+                            id="requirementBrief"
+                            placeholder="Requirement Brief"
+                            name="requirementBrief"
+                            required
+                          ></textarea>
+                        </div>
+                        <div class="form-group">
+                          <div class="form-check p-0">
+                            <label class="form-check-label small" for="invalidCheck2">
+                              Cylsys can contact me with given information. View our
+                              <a href="https://www.cylsys.com/privacy-policy.html"
+                                >Privacy Policy</a
+                              >
+                              &amp;
+                              <a href="https://www.cylsys.com/terms-of-use.html">
+                                Terms of use</a
+                              >
+                            </label>
+                          </div>
+                        </div>
+                        <div class="submit-form">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <button
+                                class="btn btn-primary w-100"
+                                type="submit"
+                              >
+                                Submit
+                              </button>
+                              
+                            </div>
+                            <div class="col-md-8">
+                              <a
+                                class="btn btn-success w-100"
+                                
+                                aria-label="Chat on WhatsApp"
+                                href="https://wa.me/+919967502270"
+                              >
+                                <i
+                                  class="fab fa-whatsapp social mr-2"
+                                  aria-label="Whatsapp"
+                                ></i>
+                                Chat on WhatsApp
+                              </a>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                              <a
+                                class="btn btn_primary1 w-100"
+                                aria-label="Chat on WhatsApp"
+                                href="https://calendly.com/pawasgoyal/discuss-on-cylsys-offerings"
+                                target="_blank"
+                              >
+                                <i
+                                  class="fa fa-calendar social mr-2"
+                                  aria-label="Whatsapp"
+                                ></i>
+                                Schedule Meeting
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                       
                     </div>
                   </div>
                   <div class="bg-quick-contact p-0" style="box-shadow: none">
                     <div
-                      cyl-include-html="https://www.cylsys.com/assets/includes/request-quote.html"
+                      cyl-include-html="assets/includes/request-quote.html"
                     ></div>
                   </div>
                 </div>
@@ -237,7 +350,7 @@
     </div>
     <!-- header include -->
     <div
-      cyl-include-html="https://www.cylsys.com/assets/includes/header.html"
+      cyl-include-html="assets/includes/header.html"
       id="header"
     ></div>
 
@@ -307,7 +420,7 @@
               <div class="card">
                 <div class="card-header">Let's Connect</div>
                 <div class="card-body px-md-5">
-                  <form class="row">
+                  <form class="row" id="quoteForm" method="post">
                     <div class="col-12 mb-3">
                       <label for="First_Name" class="form-label w-100"
                         >Name:
@@ -318,19 +431,8 @@
                           class="float-end"
                         />
                       </label>
-                      <input type="text" class="form-control" id="First_Name" />
+                      <input type="text" class="form-control" id="First_name" name="First_name" required />
                     </div>
-                    <!-- <div class="col-12 mb-3">
-                      <label for="last_name" class="form-label w-100"
-                        >Last Name:
-                        <img loading="lazy"
-                          src="https://www.cylsys.com/assets/images/star.svg"
-                          alt=""
-                          class="float-end"
-                        />
-                      </label>
-                      <input type="text" class="form-control" id="last_name" />
-                    </div> -->
                     <div class="col-12 mb-3">
                       <label for="email" class="form-label w-100"
                         >Email Address:
@@ -341,7 +443,7 @@
                           class="float-end"
                         />
                       </label>
-                      <input type="email" class="form-control" id="email" />
+                      <input type="email" class="form-control" id="Email" name="Email" required />
                     </div>
                     <div class="col-12 mb-3">
                       <label for="company" class="form-label w-100"
@@ -353,7 +455,7 @@
                           class="float-end"
                         />
                       </label>
-                      <input type="text" class="form-control" id="company" />
+                      <input type="text" class="form-control" id="OrganizationList" name="Organization_name" />
                     </div>
                     <div class="col-12 mb-3">
                       <label for="phoneNo" class="form-label w-100"
@@ -365,67 +467,21 @@
                           class="float-end"
                         />
                       </label>
-
-                      <!-- <div class="select-box">
-                        <div class="selected-option border">
-                          <div>
-                            <span
-                              class="iconify"
-                              data-icon="flag:gb-4x3"
-                            ></span>
-                            <strong>+44</strong>
-                          </div>
-                          <input
-                            type="tel"
-                            name="tel"
-                            placeholder="Phone Number"
-                          />
-                        </div>
-                        <div class="options">
-                          <input
-                            type="text"
-                            class="search-box"
-                            placeholder="Search Country Name"
-                          />
-                          <ol></ol>
-                        </div>
-                      </div> -->
                       <div class="">
                         <div class="input-group mb-1">
                           <input
                             type="tel"
                             class="form-control text-ridus"
-                            id="phone"
+                            id="ContactNo"
                             placeholder=""
-                            name="phone"
-                            ng-model="enquiry.phone"
+                            name="ContactNo"
+                            ng-model="enquiry.ContactNo"
                             required
                           />
                         </div>
                       </div>
                     </div>
-                    <!-- <div class="col-12 mb-3">
-                      <label for="countryName" class="form-label w-100"
-                        >Country Name:
-                        <img
-                          loading="lazy"
-                          src="https://www.cylsys.com/assets/images/star.svg"
-                          alt=""
-                          class="float-end"
-                        />
-                      </label>
-                      <select
-                        class="form-select"
-                        aria-label="Default select example"
-                      >
-                        <option selected>Select</option>
-                        <option value="1">Dubai</option>
-                        <option value="2">USA</option>
-                        <option value="3">Singapore</option>
-                        <option value="4">India</option>
-                        <option value="5">Other</option>
-                      </select>
-                    </div> -->
+                   
                     <div class="col-12 mb-3">
                       <label for="countryName" class="form-label w-100"
                         >What type of partnership are you interested in?
@@ -439,18 +495,10 @@
                       <select
                         class="form-select"
                         aria-label="Default select example"
+                        name="Organization_type"
+                        id="PartnerShipList"
                       >
-                        <option selected>Select</option>
-                        <option value="1">
-                          Technology & Development Partner
-                        </option>
-                        <option value="2">
-                          Reseller & Embedded Partner/ Distributor Partnerships
-                        </option>
-                        <option value="3">Shared Resources Partnerships</option>
-                        <option value="4">
-                          Custom Requirements Partnerships
-                        </option>
+                      <option value="">Select Partnership</option>
                       </select>
                     </div>
                     <div class="col-12 mb-3">
@@ -459,6 +507,7 @@
                           class="form-check-input"
                           type="checkbox"
                           id="privacy"
+                          required
                         />
                         <label class="form-check-label" for="privacy">
                           By checking this box, you agree to the processing of
@@ -473,6 +522,7 @@
                           class="form-check-input"
                           type="checkbox"
                           id="gridCheck"
+                          required
                         />
                         <label class="form-check-label" for="gridCheck">
                           I consent to receiving marketing communications,
@@ -1338,5 +1388,7 @@
     </script>
 
     <script src="assets/services/request-quote.js"></script>
-  </body>
+
+    <script src="assets/services/become-our-partner.js"></script>
+      </body>
 </html>
