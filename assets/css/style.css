@@ -2171,10 +2171,11 @@ footer .footer-body h3 {
 }
 
 .section2_bg {
-  position: relative;
-  top: -300px;
+  position: absolute;
+  top: 300px;
   left: 0;
   right: 0;
+  bottom: 0;
 }
 
 .section2_bg .subheading {
@@ -2356,7 +2357,7 @@ footer .footer-body h3 {
 } */
 
 .life_in_cylsys_bg2 {
-  top: -300px;
+  top: 470px;
 }
 
 #life_in_cylsys_bg2 {
@@ -4054,3 +4055,9 @@ input.search-box::placeholder{
   grid-column: 2 / span 2;
   grid-row: 2 / span 1;
 }
+.events section:nth-child(1) img{
+  /* background-image: url(../images/events/banner.gif);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  height: 90vh;
+  }
