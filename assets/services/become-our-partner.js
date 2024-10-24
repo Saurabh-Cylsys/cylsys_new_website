@@ -35,7 +35,7 @@
       alert('Request submitted successfully!');
       console.log('Success:', data);
       // Clear the form after successful submission
-      document.getElementById('quoteForm').reset();  // This will clear all the form fields
+      document.getElementById('partnerForm').reset();  // This will clear all the form fields
     })
     .catch(error => {
       alert('Error submitting request');
@@ -47,14 +47,14 @@
   document.addEventListener('DOMContentLoaded', function() {
     fetchOrgList();  // Call the function to populate the services dropdown
   
-    const quoteForm = document.getElementById('quoteForm');
+    const partnerForm = document.getElementById('partnerForm');
   
     // Listen for form submission
-    quoteForm.addEventListener('submit', function(event) {
+    partnerForm.addEventListener('submit', function(event) {
       event.preventDefault();  // Prevent the default form submission behavior
       console.log("Form submission intercepted."); // Debugging log
       
-      const formData = new FormData(quoteForm); // Get form data
+      const formData = new FormData(partnerForm); // Get form data
       submitForm(formData);  // Submit the form data
     });
   });
