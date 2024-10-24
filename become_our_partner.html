@@ -108,6 +108,133 @@
   </head>
 
   <body>
+    <!-- modal -->
+    <div class="modal" id="myModal0">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-quick-contact">
+          <!-- Modal Header -->
+          <div class="modal-body p-0">
+            <button
+              type="button"
+              class="btn-close close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <!-- <span aria-hidden="true">&times;</span> -->
+            </button>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-7 border-right homeform">
+                  <p>
+                    "Cylsys understand the business processes and to sustain a
+                    long term business relation with clients."
+                  </p>
+                  <p class="pt-4">
+                    <img
+                      loading="lazy"
+                      src="https://www.cylsys.com/assets/images/pawasgoyal.jpg"
+                      width="60px"
+                      class="mr-3 rounded-circle float-left"
+                      alt="Pawas Goyal"
+                    />
+                    <strong>Pawas Goyal</strong><br />
+                    <span class="small"
+                      >CEO of Cylsys Software Solution Pvt Ltd</span
+                    >
+                  </p>
+
+                  <h4 class="mt-5">For Sales Enquiry</h4>
+                  <p>
+                    +91 99675 02270<br />
+                    <a href="mailto:reachus@cylsys.com">reachus@cylsys.com</a
+                    ><br />
+                    <!-- <a
+                      href="https://www.facebook.com/cylsyssoftwaresolutionpvtltd"
+                      ><i
+                        class="fab fa-facebook social mr-2"
+                        aria-label="Facebook"
+                      ></i
+                    ></a> -->
+                    <a href="https://www.linkedin.com/company/2310187"
+                      ><i
+                        class="fab fa-linkedin-in social mr-2"
+                        aria-label="Linkedin"
+                      ></i
+                    ></a>
+                    <!-- <a href="https://www.skype.com/pawasgoyal"><i class="fab fa-skype social mr-2"></i></a> -->
+                  </p>
+                  <div class="certificate">
+                    <img
+                      loading="lazy"
+                      src="https://www.cylsys.com/assets/images/fourteen_year.jpg"
+                      alt="twelve_year"
+                      width="50"
+                      class="rounded-circle"
+                    />
+                    <img
+                      loading="lazy"
+                      src="https://www.cylsys.com/assets/images/eliteX.svg"
+                      alt=""
+                      width="50"
+                    />
+                    <img
+                      loading="lazy"
+                      src="https://www.cylsys.com/assets/images/iso.png"
+                      alt="ten years"
+                      width="50"
+                      class="rounded-circle"
+                    />
+                    <img
+                      loading="lazy"
+                      src="https://www.cylsys.com/assets/images/most-innovative-companies.png"
+                      alt="The Most Innovative Companies"
+                      class="rounded-circle"
+                      width="50"
+                    />
+                    <img
+                      loading="lazy"
+                      src="https://www.cylsys.com/assets/images/iso9001.jpg"
+                      alt="The Most Innovative Companies"
+                      class="rounded-circle"
+                      width="50"
+                    />
+                    <img
+                      loading="lazy"
+                      src="https://www.cylsys.com/assets/images/iso27001.jpg"
+                      alt="The Most Innovative Companies"
+                      class="rounded-circle"
+                      width="50"
+                    />
+                    <a
+                      href="https://sur.ly/awards-generic/api/track/click/a2a7052327c614f00beec781bc3ec109"
+                    >
+                      <img
+                        loading="lazy"
+                        src="https://www.cylsys.com/assets/images/web safety.png"
+                        alt="web safety img"
+                        class="rounded-circle"
+                        width="50"
+                    /></a>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="section-title">
+                    <div class="heading">
+                      <h2>Request a Quote</h2>
+                    </div>        
+                  </div>
+                  <div class="bg-quick-contact p-0" style="box-shadow: none">
+                    <div
+                      cyl-include-html="assets/includes/request-quote.html"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- header include -->
     <div
       cyl-include-html="assets/includes/header.html"
@@ -180,7 +307,7 @@
               <div class="card">
                 <div class="card-header">Let's Connect</div>
                 <div class="card-body px-md-5">
-                  <form class="row">
+                  <form class="row" id="partnerForm" method="post">
                     <div class="col-12 mb-3">
                       <label for="First_Name" class="form-label w-100"
                         >Name:
@@ -191,19 +318,8 @@
                           class="float-end"
                         />
                       </label>
-                      <input type="text" class="form-control" id="First_Name" />
+                      <input type="text" class="form-control" id="First_name" name="First_name" required />
                     </div>
-                    <!-- <div class="col-12 mb-3">
-                      <label for="last_name" class="form-label w-100"
-                        >Last Name:
-                        <img loading="lazy"
-                          src="https://www.cylsys.com/assets/images/star.svg"
-                          alt=""
-                          class="float-end"
-                        />
-                      </label>
-                      <input type="text" class="form-control" id="last_name" />
-                    </div> -->
                     <div class="col-12 mb-3">
                       <label for="email" class="form-label w-100"
                         >Email Address:
@@ -214,7 +330,7 @@
                           class="float-end"
                         />
                       </label>
-                      <input type="email" class="form-control" id="email" />
+                      <input type="email" class="form-control" id="Email" name="Email" required />
                     </div>
                     <div class="col-12 mb-3">
                       <label for="company" class="form-label w-100"
@@ -226,7 +342,7 @@
                           class="float-end"
                         />
                       </label>
-                      <input type="text" class="form-control" id="company" />
+                      <input type="text" class="form-control" id="OrganizationList" name="Organization_name" />
                     </div>
                     <div class="col-12 mb-3">
                       <label for="phoneNo" class="form-label w-100"
@@ -238,67 +354,21 @@
                           class="float-end"
                         />
                       </label>
-
-                      <!-- <div class="select-box">
-                        <div class="selected-option border">
-                          <div>
-                            <span
-                              class="iconify"
-                              data-icon="flag:gb-4x3"
-                            ></span>
-                            <strong>+44</strong>
-                          </div>
-                          <input
-                            type="tel"
-                            name="tel"
-                            placeholder="Phone Number"
-                          />
-                        </div>
-                        <div class="options">
-                          <input
-                            type="text"
-                            class="search-box"
-                            placeholder="Search Country Name"
-                          />
-                          <ol></ol>
-                        </div>
-                      </div> -->
                       <div class="">
                         <div class="input-group mb-1">
                           <input
                             type="tel"
                             class="form-control text-ridus"
-                            id="phone"
+                            id="ContactNo"
                             placeholder=""
-                            name="phone"
-                            ng-model="enquiry.phone"
+                            name="ContactNo"
+                            ng-model="enquiry.ContactNo"
                             required
                           />
                         </div>
                       </div>
                     </div>
-                    <!-- <div class="col-12 mb-3">
-                      <label for="countryName" class="form-label w-100"
-                        >Country Name:
-                        <img
-                          loading="lazy"
-                          src="https://www.cylsys.com/assets/images/star.svg"
-                          alt=""
-                          class="float-end"
-                        />
-                      </label>
-                      <select
-                        class="form-select"
-                        aria-label="Default select example"
-                      >
-                        <option selected>Select</option>
-                        <option value="1">Dubai</option>
-                        <option value="2">USA</option>
-                        <option value="3">Singapore</option>
-                        <option value="4">India</option>
-                        <option value="5">Other</option>
-                      </select>
-                    </div> -->
+                   
                     <div class="col-12 mb-3">
                       <label for="countryName" class="form-label w-100"
                         >What type of partnership are you interested in?
@@ -312,18 +382,10 @@
                       <select
                         class="form-select"
                         aria-label="Default select example"
+                        name="Organization_type"
+                        id="PartnerShipList"
                       >
-                        <option selected>Select</option>
-                        <option value="1">
-                          Technology & Development Partner
-                        </option>
-                        <option value="2">
-                          Reseller & Embedded Partner/ Distributor Partnerships
-                        </option>
-                        <option value="3">Shared Resources Partnerships</option>
-                        <option value="4">
-                          Custom Requirements Partnerships
-                        </option>
+                      <option value="">Select Partnership</option>
                       </select>
                     </div>
                     <div class="col-12 mb-3">
@@ -332,6 +394,7 @@
                           class="form-check-input"
                           type="checkbox"
                           id="privacy"
+                          required
                         />
                         <label class="form-check-label" for="privacy">
                           By checking this box, you agree to the processing of
@@ -346,6 +409,7 @@
                           class="form-check-input"
                           type="checkbox"
                           id="gridCheck"
+                          required
                         />
                         <label class="form-check-label" for="gridCheck">
                           I consent to receiving marketing communications,
@@ -1203,5 +1267,7 @@
     </script>
 
     <script src="assets/services/request-quote.js"></script>
-  </body>
+
+    <script src="assets/services/become-our-partner.js"></script>
+      </body>
 </html>

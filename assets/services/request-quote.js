@@ -44,8 +44,8 @@ function submitForm(formData) {
 }
 
 // Wait for the DOM content to load before executing scripts
-// document.addEventListener('DOMContentLoaded', function() {
-window.addEventListener('load', function() {
+document.addEventListener('DOMContentLoaded', function() {
+// window.addEventListener('load', function() {
   fetchServices();  // Call the function to populate the services dropdown
 
   const quoteForm = document.getElementById('quoteForm');
