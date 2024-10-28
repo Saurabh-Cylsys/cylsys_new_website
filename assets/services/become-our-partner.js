@@ -1,6 +1,6 @@
  // Function to fetch available services and populate the dropdown
  function fetchOrgList() {
-    fetch('https://admin.cylsys.com/Partner/OrgList')
+    fetch('https://cylsysadmin.cylsys.com/Partner/OrgList')
       .then(response => response.json())
       .then(data => {
         const OrganizationList = document.getElementById('PartnerShipList');
@@ -20,7 +20,7 @@
   // Function to submit form data via POST request
   function submitForm(formData) {
     console.log('Submitting form data:', formData);
-    fetch('https://admin.cylsys.com/Partner/savepartner', {
+    fetch('https://cylsysadmin.cylsys.com/Partner/savepartner', {
       method: 'POST',
       body: formData
     })
