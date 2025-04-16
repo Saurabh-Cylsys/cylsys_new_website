@@ -27,7 +27,7 @@
   --font-h2: 40px;
   --font-h3: 22px;
   --font-h4: 14px;
-  --font-p: 18px;
+  --font-p: 17px;
 
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -2995,7 +2995,7 @@ li.swiper-slide.swiper-slide-active .chote {
 } */
 
 .clients section:nth-child(1) {
-  background-image: url(https://www.cylsys.com/assets/images/clients/banner.png);
+  background-image: url(assets\images\clients\banner.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 90vh;

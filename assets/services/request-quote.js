@@ -17,6 +17,25 @@
     });
 }
 
+ // Function to fetch available product and populate the dropdown
+//  function fetchServices() {
+//   fetch('https://cylsysadmin.cylsys.com/RequestQuote/Allproduct')
+//     .then(response => response.json())
+//     .then(data => {
+//       const productDropdown = document.getElementById('productDropdown');
+//       productDropdown.innerHTML = '<option value="">Select Service</option>';
+//       data.forEach(service => {
+//         const option = document.createElement('option');
+//         option.value = service.id;  // Use ID as the value
+//         option.textContent = service.serviceName;  // Display name in the dropdown
+//         productDropdown.appendChild(option);
+//       });
+//     })
+//     .catch(error => {
+//       console.error('Error fetching services:', error);
+//     });
+// }
+
 // Function to submit form data via POST request
 function submitForm(formData) {
   console.log('Submitting form data:', formData);
