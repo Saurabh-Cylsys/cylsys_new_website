@@ -2265,6 +2265,9 @@ footer .footer-body h3 {
   height: 32px;
 }
 
+.team-grid .item7 {
+  grid-column: 1 / span 2;
+}
 .importance .card {
   box-shadow: 0px 0px 25px 0px #5f56af4d;
   border: 1px solid #253a670d;
