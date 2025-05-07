@@ -36,29 +36,16 @@
     onload="this.onload=null;this.rel='stylesheet'"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style"
-    onload="this.onload=null;this.rel='stylesheet'" />
-
-  <link rel="preload" href="https://www.cylsys.com/assets/css/style.css" as="style"
-    onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="https://www.cylsys.com/assets/css/responsive.css" as="style"
-    onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="https://www.cylsys.com/assets/css/animation.css" as="style"
-    onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="https://www.cylsys.com/assets/css/aos.css" as="style"
-    onload="this.onload=null;this.rel='stylesheet'" defer />
-  <link rel="preload" href="https://www.cylsys.com/assets/css/swiper.css" as="style"
-    onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://www.cylsys.com/assets/css/style.css" />
+    <link rel="stylesheet" href="https://www.cylsys.com/assets/css/responsive.css" />
+    <link rel="stylesheet" href="https://www.cylsys.com/assets/css/animation.css" />
+    <link rel="stylesheet" href="https://www.cylsys.com/assets/css/aos.css" />
+    <link rel="stylesheet" href="https://www.cylsys.com/assets/css/swiper.css" />
 
   <noscript>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="preload" href="https://www.cylsys.com/assets/css/style.css" />
-    <link rel="preload" href="https://www.cylsys.com/assets/css/responsive.css" />
-    <link rel="preload" href="https://www.cylsys.com/assets/css/animation.css" />
-    <link rel="preload" href="https://www.cylsys.com/assets/css/aos.css" />
-    <link rel="preload" href="https://www.cylsys.com/assets/css/swiper.css" />
   </noscript>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CZPPGPMJ42"  defer></script>
@@ -100,6 +87,37 @@
       height: 100%;
       border: 0;
     }
+
+    /* YouTube facade styles */
+    .youtube-facade {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      background-color: #000;
+    }
+
+    .youtube-thumbnail {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 68px;
+      height: 48px;
+      transition: opacity 0.3s;
+    }
+
+    .youtube-facade:hover .play-button {
+      opacity: 0.9;
+    }
   </style>
 </head>
 
@@ -128,7 +146,7 @@
       </div>
     </div>
   </div>
-
+<div class="main">
   <!-- header include -->
   <div cyl-include-html="assets/includes/header.html" id="header"></div>
 
@@ -945,7 +963,7 @@
                       <div class="text-part">
                         <img loading="lazy"
                           src="https://www.cylsys.com/assets/images/logo.svg?auto=format&fit=max&w=3840" width="25%"
-                          alt="logo" title="logo" class="bg-dark" />
+                          alt="logo" title="logo" class="bg-dark" width="30%" height="auto" />
 
                         <h4 class="comm-h1">
                           AI Driven -Holding Summary report
@@ -966,7 +984,7 @@
                     <img loading="lazy"
                       src="https://www.cylsys.com/assets/images/our-work/work1.jpg?auto=format&fit=max&w=3840"
                       class="chote prime-1 h-100" alt="Experiencing The Future Of Funny"
-                      title="Experiencing The Future Of Funny" />
+                      title="Experiencing The Future Of Funny" width="100%" height="100%" />
                   </div>
                 </div>
               </li>
@@ -981,7 +999,7 @@
                       <div class="text-part">
                         <img loading="lazy"
                           src="https://www.cylsys.com/assets/images/clients/cylsys client-amazon.png?auto=format&fit=max&w=3840"
-                          class="img-fluid" alt="amazon" title="amazon" />
+                          class="img-fluid" alt="amazon" title="amazon" width="30%" height="100%" />
                         <h4 class="comm-h1">DESKTOP SUPPORT ENGINEER</h4>
                         <p>
                           Deployed desktop support engineer for Amazon across
@@ -999,7 +1017,7 @@
                     <img loading="lazy"
                       src="https://www.cylsys.com/assets/images/our-work/work2.jpg?auto=format&fit=max&w=3840"
                       class="chote prime-1" alt="Experiencing The Future Of Funny"
-                      title="Experiencing The Future Of Funny" style="z-index: 0" />
+                      title="Experiencing The Future Of Funny" style="z-index: 0" width="100%" height="100%" />
                     <!-- <div class="amazon_div position-absolute">
                           <img loading="lazy" 
                             src="https://www.cylsys.com/assets/images/our-work/amazon/amazon1.svg?auto=format&fit=max&w=3840"
@@ -1029,7 +1047,7 @@
                       <div class="text-part margin3">
                         <img loading="lazy"
                           src="https://www.cylsys.com/assets/images/clients/cylsys client-Safegate Group.jpg?auto=format&fit=max&w=3840"
-                          class="img-fluid" alt="hurley" title="hurley" />
+                          class="img-fluid" alt="hurley" title="hurley" width="30%" height="100%" />
 
                         <h4 class="comm-h1">VDGS AIRPORT SOLUTION</h4>
                         <p>
@@ -1055,7 +1073,7 @@
                     <img loading="lazy"
                       src="https://www.cylsys.com/assets/images/our-work/work3.jpg?auto=format&fit=max&w=3840"
                       class="chote prime-1" alt="Experiencing The Future Of Funny"
-                      title="Experiencing The Future Of Funny" />
+                      title="Experiencing The Future Of Funny" width="100%" height="100%" />
                   </div>
                 </div>
               </li>
@@ -1070,7 +1088,7 @@
                       <div class="text-part">
                         <img loading="lazy"
                           src="https://www.cylsys.com/assets/images/clients/cylsys client-Uti mutual fund.jpg?auto=format&fit=max&w=3840"
-                          class="img-fluid" alt="UTI" title="UTI" />
+                          class="img-fluid" alt="UTI" title="UTI" width="30%" height="100%" />
                         <h4 class="comm-h1">DIGITAL TRANSACTION SYSTEM</h4>
                         <p>
                           Digital Transaction System is a utility that handles
@@ -1086,7 +1104,7 @@
                     <img loading="lazy"
                       src="https://www.cylsys.com/assets/images/our-work/work4.jpg?auto=format&fit=max&w=3840"
                       class="chote prime-1" alt="Experiencing The Future Of Funny"
-                      title="Experiencing The Future Of Funny" />
+                      title="Experiencing The Future Of Funny"  width="100%" height="100%" />
                   </div>
                 </div>
               </li>
@@ -1101,7 +1119,7 @@
                       <div class="text-part margin3">
                         <img loading="lazy"
                           src="https://www.cylsys.com/assets/images/clients/cylsys client-ambit.png?auto=format&fit=max&w=3840"
-                          class="img-fluid" alt="ambit" title="ambit" />
+                          class="img-fluid" alt="ambit" title="ambit" width="30%" height="100%" />
                         <h4 class="comm-h1">Ambit CRM</h4>
                         <p>
                           The objective of this project is to create a unified
@@ -1121,15 +1139,15 @@
                       <img loading="lazy"
                         src="https://www.cylsys.com/assets/images/our-work/work5/ambit1.png?auto=format&fit=max&w=3840"
                         class="chote phil-1 col-4" alt="Experiencing The Future Of Funny"
-                        title="Experiencing The Future Of Funny" />
+                        title="Experiencing The Future Of Funny" width="100%" height="100%" />
                       <img loading="lazy"
                         src="https://www.cylsys.com/assets/images/our-work/work5/ambit2.png?auto=format&fit=max&w=3840"
                         class="chote phil-2 col-4" alt="Experiencing The Future Of Funny"
-                        title="Experiencing The Future Of Funny" />
+                        title="Experiencing The Future Of Funny" width="100%" height="100%" />
                       <img loading="lazy"
                         src="https://www.cylsys.com/assets/images/our-work/work5/ambit3.png?auto=format&fit=max&w=3840"
                         class="chote phil-3 col-4" alt="Experiencing The Future Of Funny"
-                        title="Experiencing The Future Of Funny" />
+                        title="Experiencing The Future Of Funny" width="100%" height="100%" />
                     </div>
                   </div>
                 </div>
@@ -1145,7 +1163,7 @@
                       <div class="text-part">
                         <img loading="lazy"
                           src="https://www.cylsys.com/assets/images/clients/cylsys client-Wolters Kluwer.jpg?auto=format&fit=max&w=3840"
-                          class="img-fluid" alt="Wolters" title="Wolters" />
+                          class="img-fluid" alt="Wolters" title="Wolters" width="30%" height="100%" />
                         <h4 class="comm-h1">IPAD READER</h4>
                         <p>
                           We've created a content reader for Wolters Kluwer,
@@ -1160,7 +1178,7 @@
                     <img loading="lazy"
                       src="https://www.cylsys.com/assets/images/our-work/work6.jpg?auto=format&fit=max&w=3840"
                       class="chote prime-1" alt="Experiencing The Future Of Funny"
-                      title="Experiencing The Future Of Funny" />
+                      title="Experiencing The Future Of Funny"  width="100%" height="100%" />
                   </div>
                 </div>
               </li>
@@ -1175,7 +1193,7 @@
                       <div class="text-part">
                         <img loading="lazy"
                           src="https://www.cylsys.com/assets/images/clients/cylsys client-TaTa Capital.jpg?auto=format&fit=max&w=3840"
-                          class="img-fluid" alt="tata capital" title="tata capital" />
+                          class="img-fluid" alt="tata capital" title="tata capital" width="30%" height="100%" />
                         <h4 class="comm-h1">LEARNING MANAGEMENT SYSTEMS</h4>
                         <p>
                           Cylsys provide end-to-end eLearning solutions and
@@ -1190,7 +1208,7 @@
                     <img loading="lazy"
                       src="https://www.cylsys.com/assets/images/our-work/work7.jpg?auto=format&fit=max&w=3840"
                       class="chote prime-1" alt="Experiencing The Future Of Funny"
-                      title="Experiencing The Future Of Funny" />
+                      title="Experiencing The Future Of Funny" width="100%" height="100%" />
                   </div>
                 </div>
               </li>
@@ -1207,7 +1225,7 @@
                           src="https://www.cylsys.com/assets/images/clients/cylsys client-pfizer 75.jpg?auto=format&fit=max&w=3840"
                           class="img-fluid"
                           alt="https://www.cylsys.com/assets/images/clients/cylsys client-pfizer 75.jpg?auto=format&fit=max&w=3840"
-                          titlehref="https://www.cylsys.com/assets/images/clients/cylsys client-pfizer 75.jpg?auto=format&fit=max&w=3840" />
+                          titlehref="https://www.cylsys.com/assets/images/clients/cylsys client-pfizer 75.jpg?auto=format&fit=max&w=3840"  width="30%" height="100%" />
                         <h4 class="comm-h1">Data Migration Activity</h4>
                         <p>
                           Pfizer is one of the worlds premier
@@ -1228,7 +1246,7 @@
                         src="https://www.cylsys.com/assets/images/our-work/work8.jpg?auto=format&fit=max&w=3840"
                         class="chote prime-1"
                         alt="https://www.cylsys.com/assets/images/our-work/pfizer.svg?auto=format&fit=max&w=3840"
-                        titlehref="https://www.cylsys.com/assets/images/our-work/pfizer.svg?auto=format&fit=max&w=3840" />
+                        titlehref="https://www.cylsys.com/assets/images/our-work/pfizer.svg?auto=format&fit=max&w=3840" width="100%" height="100%" />
                     </div>
                   </div>
                 </div>
@@ -1246,7 +1264,7 @@
                           src="https://www.cylsys.com/assets/images/clients/cylsys client-jm financial 82.png?auto=format&fit=max&w=3840"
                           class="img-fluid"
                           alt="https://www.cylsys.com/assets/images/clients/cylsys client-jm financial 82.png?auto=format&fit=max&w=3840"
-                          titlehref="https://www.cylsys.com/assets/images/clients/cylsys client-jm financial 82.png?auto=format&fit=max&w=3840" />
+                          titlehref="https://www.cylsys.com/assets/images/clients/cylsys client-jm financial 82.png?auto=format&fit=max&w=3840"  width="30%" height="100%" />
                         <h4 class="comm-h1">UI/UX Dashboards</h4>
                         <p>
                           CYLSYS specializes in delivering tailored IT
@@ -1265,17 +1283,17 @@
                         src="https://www.cylsys.com/assets/images/our-work/work9/jm_compass1.png?auto=format&fit=max&w=3840"
                         class="chote phil-1 col-4"
                         alt="https://www.cylsys.com/assets/images/our-work/work9/jm_compass1.png?auto=format&fit=max&w=3840"
-                        titlehref="https://www.cylsys.com/assets/images/our-work/work9/jm_compass1.png?auto=format&fit=max&w=3840" />
+                        titlehref="https://www.cylsys.com/assets/images/our-work/work9/jm_compass1.png?auto=format&fit=max&w=3840" width="100%" height="100%" />
                       <img loading="lazy"
                         src="https://www.cylsys.com/assets/images/our-work/work9/jm_compass2.png?auto=format&fit=max&w=3840"
                         class="chote phil-2 col-4"
                         alt="https://www.cylsys.com/assets/images/our-work/work9/jm_compass2.png?auto=format&fit=max&w=3840"
-                        titlehref="https://www.cylsys.com/assets/images/our-work/work9/jm_compass2.png?auto=format&fit=max&w=3840" />
+                        titlehref="https://www.cylsys.com/assets/images/our-work/work9/jm_compass2.png?auto=format&fit=max&w=3840" width="100%" height="100%" />
                       <img loading="lazy"
                         src="https://www.cylsys.com/assets/images/our-work/work9/jm_compass3.png?auto=format&fit=max&w=3840"
                         class="chote phil-3 col-4"
                         alt="https://www.cylsys.com/assets/images/our-work/work9/jm_compass3.png?auto=format&fit=max&w=3840"
-                        titlehref="https://www.cylsys.com/assets/images/our-work/work9/jm_compass3.png?auto=format&fit=max&w=3840" />
+                        titlehref="https://www.cylsys.com/assets/images/our-work/work9/jm_compass3.png?auto=format&fit=max&w=3840"  width="100%" height="100%" />
                     </div>
                   </div>
                 </div>
@@ -1293,7 +1311,7 @@
                           src="https://www.cylsys.com/assets/images/clients/cylsys client-NeoGrowth.jpg?auto=format&fit=max&w=3840"
                           class="img-fluid"
                           alt="https://www.cylsys.com/assets/images/clients/cylsys client-NeoGrowth.jpg?auto=format&fit=max&w=3840"
-                          titlehref="https://www.cylsys.com/assets/images/clients/cylsys client-NeoGrowth.jpg?auto=format&fit=max&w=3840" />
+                          titlehref="https://www.cylsys.com/assets/images/clients/cylsys client-NeoGrowth.jpg?auto=format&fit=max&w=3840" width="30%" height="100%" />
                         <h4 class="comm-h1">Advance Suite</h4>
                         <p>
                           Neogrowth is a leading NBFC which is in the Business
@@ -1313,7 +1331,7 @@
                       src="https://www.cylsys.com/assets/images/our-work/work10.jpg?auto=format&fit=max&w=3840"
                       class="chote prime-1"
                       alt="https://www.cylsys.com/assets/images/mobile_carousal1_img7.svg?auto=format&fit=max&w=3840"
-                      titlehref="https://www.cylsys.com/assets/images/mobile_carousal1_img7.svg?auto=format&fit=max&w=3840" />
+                      titlehref="https://www.cylsys.com/assets/images/mobile_carousal1_img7.svg?auto=format&fit=max&w=3840" width="100%" height="100%" />
                     <!-- </div> -->
                   </div>
                 </div>
@@ -1525,7 +1543,7 @@
 
   <!-- footer  -->
   <div cyl-include-html="assets/includes/footer.html"></div>
-
+</div>
   <!-- script start here -->
   <!-- Google tag (gtag.js) -->
   <script src="https://www.cylsys.com/assets/js/gtag.js" defer="true" data-nscript="afterInteractive"></script>
@@ -1551,7 +1569,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <script src="https://www.cylsys.com/assets/js/swiper.js" defer></script>
 
-  <script src="https://www.cylsys.com/assets/js/lazyYoutube.js" defer></script>
+  <script src="https://www.cylsys.com/assets/js/lazyYoutube.js" async></script>
   <script src="assets/services/request-quote.js" defer></script>
   <script type="text/javascript">
     _linkedin_partner_id = "6810852";
@@ -1559,7 +1577,7 @@
       window._linkedin_data_partner_ids || [];
     window._linkedin_data_partner_ids.push(_linkedin_partner_id);
   </script>
-  <script type="text/javascript">
+  <script defer type="text/javascript">
     (function (l) {
       if (!l) {
         window.lintrk = function (a, b) {
@@ -1581,7 +1599,7 @@
   </noscript>
   <!--Start of Tawk.to Script-->
 
-  <script type="text/javascript">
+  <script defer type="text/javascript">
     var Tawk_API = Tawk_API || {},
       Tawk_LoadStart = new Date();
 
